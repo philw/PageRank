@@ -7,7 +7,7 @@
                          {0, 1, 0, 1},
                          {0, 0, 0, 0}}
 
-        Dim LinkCount = {1, 2, 1, 1}
+        Dim OutLinkCount = {1, 2, 1, 1}
 
         Dim PageRank() As Double = {1, 1, 1, 1}
         Dim NumPages As Integer = PageRank.Length
@@ -28,7 +28,7 @@
                 Rank = 0.0
                 For Link = 0 To NumPages - 1
                     If Link <> Page And PageLinks(Page, Link) = 1 Then
-                        Rank += PageRank(Link) / LinkCount(Link)
+                        Rank += PageRank(Link) / OutLinkCount(Link)
                     End If
                 Next
                 PageRank(Page) = Rank * Damping + (1 - Damping)
