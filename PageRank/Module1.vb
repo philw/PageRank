@@ -1,4 +1,4 @@
-﻿Module Module1
+﻿Module PageRank
 
     Sub Main()
 
@@ -37,15 +37,12 @@
             UserInput = Console.ReadLine()
         Loop While UserInput = ""
 
-
     End Sub
 
     Sub PrintHeaderRow(Cols)
-        Dim C As Char
 
         For N = 0 To Cols - 1
-            C = Chr(Asc("A") + N)
-            Console.Write("{0,-10}", C)
+            Console.Write("{0,-10}", Chr(Asc("A") + N))
         Next
         Console.WriteLine()
 
@@ -56,7 +53,7 @@
         For N = 0 To PageRank.Length - 1
             Console.Write("{0,-10:N3}", PageRank(N))
         Next
-        'Console.WriteLine()
+
     End Sub
 
 End Module

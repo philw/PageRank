@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F5348F9A-A117-4EA5-822E-7578ED2C722A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>PageRank.Module1</StartupObject>
+    <StartupObject>PageRank.PageRank</StartupObject>
     <RootNamespace>PageRank</RootNamespace>
     <AssemblyName>PageRank</AssemblyName>
     <FileAlignment>512</FileAlignment>
